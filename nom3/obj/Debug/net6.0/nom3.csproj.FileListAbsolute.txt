@@ -1,0 +1,15 @@
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.csproj.AssemblyReference.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.AssemblyInfoInputs.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.AssemblyInfo.cs
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.csproj.CoreCompileInputs.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\bin\Debug\net6.0\nom3.exe
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\bin\Debug\net6.0\nom3.deps.json
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\bin\Debug\net6.0\nom3.runtimeconfig.json
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\bin\Debug\net6.0\nom3.dll
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\bin\Debug\net6.0\nom3.pdb
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.dll
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\refint\nom3.dll
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.pdb
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\nom3.genruntimeconfig.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom3\obj\Debug\net6.0\ref\nom3.dll
