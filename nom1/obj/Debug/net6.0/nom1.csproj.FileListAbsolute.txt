@@ -1,0 +1,15 @@
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.csproj.AssemblyReference.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.AssemblyInfoInputs.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.AssemblyInfo.cs
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.csproj.CoreCompileInputs.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\bin\Debug\net6.0\nom1.exe
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\bin\Debug\net6.0\nom1.deps.json
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\bin\Debug\net6.0\nom1.runtimeconfig.json
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\bin\Debug\net6.0\nom1.dll
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\bin\Debug\net6.0\nom1.pdb
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.dll
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\refint\nom1.dll
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.pdb
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\nom1.genruntimeconfig.cache
+C:\Users\Николай\Desktop\DZ18Aug\Dzaug3\nom1\obj\Debug\net6.0\ref\nom1.dll
