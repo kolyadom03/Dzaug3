@@ -1,21 +1,13 @@
-﻿int size = 10;
-int[] numbers = new int[size];
-int sum = 0;
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
-void FillArrayRandomNumbers(int[] array)
+﻿Console.Write("Введите элементы(через пробел): ");
+int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int count = 0;
+ 
+for (int i = 0; i < arr.Length; i++)
 {
-    for(int i = 0; i < array.Length; i++)
+    if (arr[i] > 0)
     {
-        array[i] = new Random().Next(100, 999);
+        count++;
     }
 }
-void PrintArray(int[] array)
-{
-    for(int i = 0; i < array.Length; i++)
-    if(array[i] % 2 == 0)
-        sum++;
-    {
-        Console.Write(sum);
-    }
-}
+ 
+Console.WriteLine($"Кол-во элементов > 0: {count}");
