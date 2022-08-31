@@ -1,22 +1,16 @@
-﻿int size = 3;
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
-int sum = 0;
-void FillArrayRandomNumbers(int[] array)
-{
-    for(int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(100, 999);
-    }
-}
-void PrintArray(int[] array)
-{
-    for(int i = 1; i < array.Length; i+=2)
- {
-    sum += array[i];
- }    
-    
-         Console.Write(sum);
+﻿Console.Write("Введите k1: ");
+int k1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите b1: ");
+int b1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите k2: ");
+int k2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите b2: ");
+int b2 = Convert.ToInt32(Console.ReadLine());
+ 
+ 
+int x = -(b1 - b2) / (k1 - k2);
+int y = k1 * x + b1;
+ 
 
-}
+ 
+Console.WriteLine($"Пересечение в точке: ({x};{y})");
