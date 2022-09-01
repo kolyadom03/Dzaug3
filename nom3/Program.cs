@@ -1,28 +1,22 @@
-﻿int size = 10;
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
-void FillArrayRandomNumbers(int[] array)
+﻿Random random = new Random();
+int[,] mas = new int[random.Next(1, 10), random.Next(1, 10)];
+for (int i = 0; i < mas.GetLength(0); i++)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int j = 0; j < mas.GetLength(1); j++)
     {
-        array[i] = new Random().Next(100, 999);
+        mas[i, j] = random.Next(1, 10);
+        Console.Write(mas[i, j] + " ");
     }
+    Console.WriteLine();
 }
-void PrintArray(int[] array)
+Console.WriteLine(mas.GetLength(0));
+for (int j = 0; j < mas.GetLength(1); j++)
 {
-    for(int i = 0; i < array.Length; i++)
+    double sum = 0;
+    for (int i = 0; i < mas.GetLength(0); i++)
     {
-        Console.Write(array[i]+ " ");
+        sum += mas[i, j];
     }
+    Console.Write($"{ sum / mas.GetLength(0)} ");
 }
-int Max = numbers[0];
-int Min = numbers[0];
-for(int i = 1; i < size; i++)
-{
-    if(Max < numbers[i])
-        Max = numbers[i];
-    if(Min > numbers[i])
-        Min = numbers[i];
-}
-Console.Write(Max + Min); 
+Console.ReadLine();
