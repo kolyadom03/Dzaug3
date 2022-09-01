@@ -1,13 +1,29 @@
-﻿Console.Write("Введите элементы(через пробел): ");
-int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-int count = 0;
- 
-for (int i = 0; i < arr.Length; i++)
+﻿Console.WriteLine("Введите m");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите n");
+int n = Convert.ToInt32(Console.ReadLine());
+double[,] matrix = new double[m, n];
+void PrintArray(double[,] matr)
 {
-    if (arr[i] > 0)
+    for (int i = 0; i < matr.GetLength(0); i++)
     {
-        count++;
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.Write(matr[i, j] + " ");
+        }
+        Console.WriteLine();
     }
 }
- 
-Console.WriteLine($"Кол-во элементов > 0: {count}");
+void FillRndDoubleArray(double[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            Random rand = new Random();
+            matr[i, j] = rand.Next(-10, 10);
+        }
+    }
+}
+FillRndDoubleArray(matrix);
+PrintArray(matrix);
