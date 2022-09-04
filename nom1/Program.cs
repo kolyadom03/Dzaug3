@@ -1,29 +1,62 @@
-﻿Console.WriteLine("Введите m");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите n");
-int n = Convert.ToInt32(Console.ReadLine());
-double[,] matrix = new double[m, n];
-void PrintArray(double[,] matr)
+﻿
+Console.WriteLine("Введите число");
+int m = InputNumbers("Введите m: ");
+int n = InputNumbers("Введите n: ");
+int range = InputNumbers("Введите: от 1 до ");
+
+int[,] array = new int[m, n];
+CreateArray(array);
+WriteArray(array);
+
+
+OneArrayLines(array);
+WriteArray(array);
+
+void OneArrayLines(int[,] array)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)
+      for (int k = 0; k < array.GetLength(1) - 1; k++)
+      {
+        if (array[i, k] < array[i, k + 1])
         {
-            Console.Write(matr[i, j] + " ");
+          int temp = array[i, k + 1];
+          array[i, k + 1] = array[i, k];
+          array[i, k] = temp;
         }
-        Console.WriteLine();
+      }
     }
+  }
 }
-void FillRndDoubleArray(double[,] matr)
+
+int InputNumbers(string input)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)
-    {
-        for (int j = 0; j < matr.GetLength(1); j++)
-        {
-            Random rand = new Random();
-            matr[i, j] = rand.Next(-10, 10);
-        }
-    }
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
 }
-FillRndDoubleArray(matrix);
-PrintArray(matrix);
+
+void CreateArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      array[i, j] = new Random().Next(range);
+    }
+  }
+}
+
+void WriteArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      Console.Write(array[i, j] + " ");
+    }
+    Console.WriteLine();
+  }
+}
