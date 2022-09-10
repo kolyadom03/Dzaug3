@@ -1,39 +1,20 @@
-﻿
+﻿Console.WriteLine("Введите два положительных числа: M и N.");
+int m = InputInt("Введите M: ");
+int n = InputInt("Введите N: ");
+Console.WriteLine($"A({m}, {n}) = {Akk(m, n)}");
 
-int n = 4;
-int[,] nMatrix = new int[n, n];
-
-int temp = 1;
-int i = 0;
-int j = 0;
-
-while (temp <= nMatrix.GetLength(0) * nMatrix.GetLength(1))
+int InputInt(string output)
 {
-  nMatrix[i, j] = temp;
-  temp++;
-  if (i <= j + 1 && i + j < nMatrix.GetLength(1) - 1)
-    j++;
-  else if (i < j && i + j >= nMatrix.GetLength(0) - 1)
-    i++;
-  else if (i >= j && i + j > nMatrix.GetLength(1) - 1)
-    j--;
-  else
-    i--;
+    Console.Write(output);
+    return int.Parse(Console.ReadLine());
 }
 
-WriteArray(nMatrix);
-
-void WriteArray (int[,] array)
+int Akk(int m, int n)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-      if (array[i,j] / 10 <= 0)
-      Console.Write($" {array[i,j]} ");
-
-      else Console.Write($"{array[i,j]} ");
-    }
-    Console.WriteLine();
-  }
+    if (m == 0)
+        return n + 1;
+    if (m > 0 && n == 0)
+        return Akk(m - 1, 1);
+    else
+        return Akk(m - 1, Akk(m, n - 1));
 }
