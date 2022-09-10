@@ -1,32 +1,16 @@
-﻿ 
-for (int i = 0; i < arr.GetLength(0); i++)
- 
-   for (int j = 0; j < arr.GetLength(1); j++)
-    
-        for (int k = 0; k < arr.GetLength(2); k++)
- 
-            arr[i, j, k] = random.Next(10, 99);
-            int t = arr[i, j, k];
-               int w = 0;
-                if (w ==t)
-                    break;
-                if (w != t)
-                t = w;
-      
- 
-for (int i = 0; i < arr.GetLength(0); i++)
+﻿int m = InputInt("Введите M:");
+int n = InputInt("Введите N:");
+Console.WriteLine($"Сумма элементов от {m} до {n} = {CountNaturalSum(m, n)}");
+
+int InputInt(string output)
 {
-    Console.WriteLine("Page N: "+ (i + 1));
- 
-   for (int j = 0; j < arr.GetLength(1); j++)
-       {
-        for (int k = 0; k < arr.GetLength(2); k++)
-            {
-            Console.Write(arr[i, j, k] + " ");
-            }
-        Console.WriteLine();
-       }
-    Console.WriteLine("============================");
+ Console.Write(output);
+ return int.Parse(Console.ReadLine());
 }
- 
-Console.ReadLine();
+
+int CountNaturalSum(int m, int n)
+{
+ if (m == n)
+ return n;
+    return n + CountNaturalSum(m, n - 1);
+}
